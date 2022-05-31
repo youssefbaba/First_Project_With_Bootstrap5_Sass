@@ -1,0 +1,200 @@
+:root {
+	--dark-color: #19283f;
+	--green-color: #33d1cc;
+	--red-color: #ff3150;
+	--yellow-color: #ffc400;
+	--light-color: #eff7fa;
+}
+.main-btn {
+	background-color: var(--red-color);
+	color: var(--yellow-color);
+}
+.main-btn:hover {
+	color: var(--yellow-color);
+}
+.main-btn:focus {
+	box-shadow: none;
+}
+.main-title::after {
+	content: "";
+	width: 120px;
+	height: 2px;
+	background-color: var(--green-color);
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+body {
+	font-family: "Roboto", sans-serif;
+}
+/* Start Navigation Bar */
+.navbar {
+	background-color: var(--dark-color);
+}
+.navbar .navbar-toggler {
+	font-size: 25px;
+	border-color: white;
+}
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+	border-color: var(--green-color);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+	color: var(--green-color) !important;
+}
+
+@media (min-width: 992px) {
+	.navbar .search::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 1.5px;
+		height: 41.97px;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: var(--green-color);
+	}
+}
+
+.navbar .search svg {
+	color: var(--green-color);
+}
+
+/* End Navigation Bar */
+/* Start Landing */
+.landing {
+	background-color: var(--dark-color);
+	height: calc(100vh - 71.9717px);
+}
+/* End Landing */
+/* Start Services */
+.services .icon-holder {
+	height: 12rem;
+}
+.services .icon-holder svg {
+	transform: translateX(-50%);
+}
+.services .icon-holder .number {
+	color: var(--light-color);
+}
+.services .icon-holder .icon {
+	color: var(--green-color);
+}
+.services h3 {
+	color: var(--yellow-color);
+}
+/* End Services */
+/* Start Portfolio */
+.portfolio {
+	background-color: var(--light-color);
+}
+.portfolio ul .active {
+	background-color: var(--red-color);
+	color: var(--yellow-color);
+}
+.portfolio ul li {
+	cursor: pointer;
+}
+.portfolio ul li:not(.active):hover {
+	color: var(--red-color);
+}
+
+.portfolio .portfolio-item::before {
+	content: attr(data-text);
+	position: absolute;
+	background-color: rgba(51, 209, 204, 0.8);
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	color: white;
+	transition: transform 0.3s, visibility 0.3s;
+	font-size: 1.3rem;
+	top: 5px;
+	transform: translateX(-100%);
+	visibility: hidden;
+}
+.portfolio .portfolio-item:hover::before {
+	transform: translateX(0);
+	visibility: visible;
+}
+/* End Portfolio */
+/* Start About Us */
+.about-us-desciption {
+	max-width: 500px;
+}
+/* End About Us */
+/* Start Team */
+.team {
+	background-color: var(--light-color);
+}
+.team .main-title-team > h2 {
+	color: var(--yellow-color);
+}
+
+.team .card-title {
+	background-color: var(--green-color);
+}
+/* End Team */
+/* Start Advertise */
+.advertise {
+	background-color: var(--dark-color);
+}
+
+/* End Advertise */
+/* Start Contact */
+.contact {
+	background-color: var(--yellow-color);
+}
+
+.contact input[type="text"]::placeholder {
+	color: white;
+}
+.contact input[type="text"]:focus {
+	outline: none;
+}
+.contact input[type="submit"],
+.contact input[type="submit"]:hover {
+	background-color: var(--dark-color);
+	color: var(--yellow-color);
+}
+.contact input[type="submit"]:focus {
+	box-shadow: none;
+}
+/* End Contact */
+/* Start Footer */
+.footer {
+	background-color: var(--dark-color);
+}
+.footer .creator > span {
+	color: var(--green-color);
+}
+.footer .copyright > span {
+	color: var(--yellow-color);
+}
+.footer .contact-us li a {
+	width: 40px;
+	height: 40px;
+}
+.footer .contact-us li:first-child a {
+	background-color: #1877f2;
+}
+.footer .contact-us li:nth-child(2) a {
+	background-color: #1da1f2;
+}
+.footer .contact-us li:nth-child(3) a {
+	background-color: #0077b5;
+}
+.footer .contact-us li:last-child a {
+	background-color: #ff0000;
+}
+
+/* End Footer */
