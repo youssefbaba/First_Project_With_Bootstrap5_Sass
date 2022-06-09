@@ -1,0 +1,7 @@
+@use "../abstracts/variables"as *;
+@use "../vendors/bootstrap"as *;
+
+.btn-red-pink {
+  @include button-variant($red-pink, $red-pink);
+  color: $supernova;
+}

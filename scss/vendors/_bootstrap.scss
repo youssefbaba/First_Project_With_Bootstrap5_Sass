@@ -1,2 +1,11 @@
+/* I can write code here to override the value of any bootstrap (variables, maps,....) */
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Create your own map
+$custom-gutters: (6: $spacer * 1.875);
+// Merge the maps
+$gutters: map-merge($gutters, $custom-gutters);
+
 /* Import Bootstrap */
-@use "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

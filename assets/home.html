@@ -8,66 +8,306 @@
   <title>First Project With Bootstrap5 And Sass </title>
   <!-- Stylesheet Css -->
   <link rel="stylesheet" href="css/home.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          Accordion Item #1
+  <!-- Start The Section Header -->
+  <header class="header">
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ebony-clay fixed-top">
+      <div class="container px-lg-0">
+        <a class="navbar-brand py-0" href="#">
+          <img src="media/imgs/header/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler border border-white shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-white"></i>
         </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+        <div class="collapse navbar-collapse fs-sm" id="navbarContent">
+          <ul class="navbar-nav align-items-lg-center ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-cadet-blue pt-3 pt-lg-2" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-cadet-blue" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-cadet-blue" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-cadet-blue" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-cadet-blue  pb-3 pb-lg-2" href="#">Contact</a>
+            </li>
+            <form class="form d-flex align-items-center">
+              <span class="position-relative d-none d-lg-block">
+                <img src="media/imgs/header/search-icon.svg" alt="saerch-icon">
+              </span>
+              <button class="btn btn-red-pink rounded-pill  p-0 fw-md fs-sm" type="submit">Login</button>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start The Section Intro -->
+    <section class="intro bg-ebony-clay">
+      <div class="container text-center h-100">
+        <h1 class="intro-title display-2 text-white-lilac">Taste the Creativity</h1>
+        <p class="intro-description text-cadet-blue fs-sm">We make awesome graphic and web design</p>
+        <button class="btn btn-red-pink rounded-pill p-0 fw-md fs-sm" type="submit">Get Started</button>
+      </div>
+    </section>
+    <!-- End The Section Intro -->
+  </header>
+  <!-- End The Section Header -->
+  <!-- Start The Section Services -->
+  <section class="services bg-white" id="services">
+    <div class="container">
+      <div class="header-section text-center">
+        <img src="media/imgs/title.png" alt="title_image">
+        <h2 class="header-section-title text-blue-zodiac fw-md">We are good at</h2>
+        <p class="header-section-description text-uppercase text-cadet-blue mb-0 position-relative">some of these stuff
+          under
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row gy-6 gx-md-6">
+        <div class="col-md-6 col-lg-4 services-item text-center">
+          <div class="number position-relative">
+            <img src="media/imgs/services/number1.svg" alt="number-one" class="position-absolute top-100 start-50">
+            <img src="media/imgs/services/pencil.svg" alt="pecil_icon" class="position-relative">
+          </div>
+          <h4 class="services-item-title text-uppercase text-supernova fw-md">graphic design</h4>
+          <p class="services-item-description text-cadet-blue fs-sm lh-lg mb-0">
+            Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at
+            tellus.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 services-item text-center">
+          <div class="number position-relative">
+            <img src="media/imgs/services/number2.svg" alt="number-two" class="position-absolute top-100 start-50">
+            <img src="media/imgs/services/monitor.svg" alt="monitor_icon" class="position-relative">
+          </div>
+          <h4 class="services-item-title text-uppercase text-supernova fw-md">web design</h4>
+          <p class="services-item-description text-cadet-blue fs-sm lh-lg mb-0">
+            Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at
+            tellus.
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 services-item text-center">
+          <div class="number position-relative">
+            <img src="media/imgs/services/number3.svg" alt="number-three" class="position-absolute top-100 start-50">
+            <img src="media/imgs/services/plug.svg" alt="plug_icon" class="position-relative">
+          </div>
+          <h4 class="services-item-title text-uppercase text-supernova fw-md">app design</h4>
+          <p class="services-item-description text-cadet-blue fs-sm lh-lg mb-0">
+            Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at
+            tellus.
+          </p>
         </div>
       </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
-        </div>
+  </section>
+  <!-- End The Section Services -->
+  <!-- Start The Section Portfolio -->
+  <section class="portfolio bg-catskill-white" id="portfolio">
+    <div class="container">
+      <div class="header-section text-center">
+        <img src="media/imgs/title.png" alt="title_image">
+        <h2 class="header-section-title text-blue-zodiac fw-md text-capitalize">we make this</h2>
+        <p class="header-section-description text-uppercase text-cadet-blue mb-0 position-relative">prepare to be amazed
+        </p>
       </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+    <div class="container">
+      <ul class="list-unstyled list-choices d-flex justify-content-center  text-capitalize fs-sm">
+        <li>
+          <a href="#" class="link-item text-decoration-none text-cadet-blue d-inline-block rounded-3">all</a>
+        </li>
+        <li>
+          <a href="#" class="link-item text-decoration-none text-cadet-blue d-inline-block rounded-3">design</a>
+        </li>
+        <li>
+          <a href="#" class="link-item text-decoration-none text-cadet-blue d-inline-block rounded-3">code</a>
+        </li>
+        <li>
+          <a href="#" class="link-item text-decoration-none text-cadet-blue d-inline-block rounded-3">photoghraphy</a>
+        </li>
+        <li>
+          <a href="#" class="link-item text-decoration-none text-cadet-blue d-inline-block rounded-3">apps</a>
+        </li>
+      </ul>
+      <div class="row gy-6 gx-md-6">
+        <div class="col-md-6 col-lg-3">
+          <div class="card position-relative overflow-hidden">
+            <img src="media/imgs/works/work-1.jpg" class="card-img-top img-fluid" alt="work_01">
+            <div class="card-body text-capitalize p-0 center-flex flex-column position-absolute w-100 h-100 invisible">
+              <h5 class="card-title text-white fw-normal mb-3">awesome work</h5>
+              <p class="card-text text-blue-zodiac fs-sm">design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card position-relative overflow-hidden">
+            <img src="media/imgs/works/work-2.jpg" class="card-img-top img-fluid" alt="work_02">
+            <div class="card-body text-capitalize p-0 center-flex flex-column position-absolute w-100 h-100 invisible">
+              <h5 class="card-title text-white fw-normal mb-3">awesome work</h5>
+              <p class="card-text text-blue-zodiac fs-sm">design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card position-relative overflow-hidden">
+            <img src="media/imgs/works/work-3.jpg" class="card-img-top img-fluid" alt="work_03">
+            <div class="card-body text-capitalize p-0 center-flex flex-column position-absolute w-100 h-100 invisible">
+              <h5 class="card-title text-white fw-normal mb-3">awesome work</h5>
+              <p class="card-text text-blue-zodiac fs-sm">design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card position-relative overflow-hidden">
+            <img src="media/imgs/works/work-4.jpg" class="card-img-top img-fluid" alt="work_04">
+            <div class="card-body text-capitalize p-0 center-flex flex-column position-absolute w-100 h-100 invisible">
+              <h5 class="card-title text-white fw-normal mb-3">awesome work</h5>
+              <p class="card-text text-blue-zodiac fs-sm">design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card position-relative overflow-hidden">
+            <img src="media/imgs/works/work-5.jpg" class="card-img-top img-fluid" alt="work_05">
+            <div class="card-body text-capitalize p-0 center-flex flex-column position-absolute w-100 h-100 invisible">
+              <h5 class="card-title text-white fw-normal mb-3">awesome work</h5>
+              <p class="card-text text-blue-zodiac fs-sm">design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card position-relative overflow-hidden">
+            <img src="media/imgs/works/work-6.jpg" class="card-img-top img-fluid" alt="work_06">
+            <div class="card-body text-capitalize p-0 center-flex flex-column position-absolute w-100 h-100 invisible">
+              <h5 class="card-title text-white fw-normal mb-3">awesome work</h5>
+              <p class="card-text text-blue-zodiac fs-sm">design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card position-relative overflow-hidden">
+            <img src="media/imgs/works/work-7.jpg" class="card-img-top img-fluid" alt="work_07">
+            <div class="card-body text-capitalize p-0 center-flex flex-column position-absolute w-100 h-100 invisible">
+              <h5 class="card-title text-white fw-normal mb-3">awesome work</h5>
+              <p class="card-text text-blue-zodiac fs-sm">design</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card position-relative overflow-hidden">
+            <img src="media/imgs/works/work-8.jpg" class="card-img-top img-fluid" alt="work_08">
+            <div class="card-body text-capitalize p-0 center-flex flex-column position-absolute w-100 h-100 invisible">
+              <h5 class="card-title text-white fw-normal mb-3">awesome work</h5>
+              <p class="card-text text-blue-zodiac fs-sm">design</p>
+            </div>
+          </div>
         </div>
       </div>
+      <button class="btn btn-red-pink rounded-pill p-0 fw-md fs-sm d-block mx-auto text-uppercase" type="submit">
+        i want more
+      </button>
     </div>
+  </section>
+  <!-- End The Section Portfolio -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
   </div>
-  <i class="fa-brands fa-twitter text-danger"></i>
   <!-- Bootstrap Js -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>

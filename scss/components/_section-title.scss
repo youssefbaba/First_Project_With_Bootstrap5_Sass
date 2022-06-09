@@ -1,0 +1,28 @@
+@use "../abstracts/variables"as *;
+@use"../../node_modules/sass-rem/rem"as *;
+@use "../vendors/bootstrap"as *;
+
+.header-section {
+  &-title {
+    margin: rem(49px 0 21px);
+
+    @include media-breakpoint-up(sm) {
+      font-size: rem(35px);
+    }
+  }
+
+  &-description {
+    padding-bottom: rem(19px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $dark-turquoise;
+      width: rem(150px);
+      height: rem(2px);
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

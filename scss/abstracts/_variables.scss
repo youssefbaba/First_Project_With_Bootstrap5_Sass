@@ -1,0 +1,22 @@
+@use "../../node_modules/sass-rem/rem"as *;
+
+$base-size: 16px;
+$cadet-blue : #a8b9c0;
+$ebony-clay:#19283f;
+$dark-turquoise : #00c6bf;
+$red-pink :#ff3150;
+$supernova : #ffc501;
+$blue-zodiac :#1a2940;
+$white-lilac : #f0f8fb;
+$catskill-white : #eff7fa;
+$fon-size-small: rem(15px);
+$font-weight-medium: 500;
+
+$colors : ("cadet-blue": #a8b9c0,
+  "ebony-clay":#19283f,
+  "dark-turquoise" : #00c6bf,
+  "red-pink" :#ff3150,
+  "supernova" : #ffc501,
+  "blue-zodiac" :#1a2940,
+  "white-lilac" : #f0f8fb,
+  "catskill-white" : #eff7fa)

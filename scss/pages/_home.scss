@@ -1,0 +1,113 @@
+@use "../abstracts/functions"as *;
+@use "../abstracts/variables"as *;
+@use "../abstracts/mixins"as *;
+@use "../vendors/bootstrap"as *;
+@use "../../node_modules/sass-rem/rem"as *;
+@use "../components/button"as *;
+
+
+/* Start The Intro Section */
+.intro {
+  height: rem(500px);
+
+  &-title {
+    padding-top: rem(207px);
+
+    @include media-breakpoint-up(sm) {
+      font-size: rem(51.16px);
+    }
+  }
+
+  p {
+    margin-bottom: rem(34px);
+  }
+
+  button {
+    width: rem(190px);
+    height: rem(45px);
+    line-height: rem(45px);
+  }
+}
+
+/* End The Intro Section */
+/* Start The Services Section */
+.services {
+  padding-top: rem(58px);
+  padding-bottom: rem(63px);
+
+  &-item {
+    margin-top: rem(calc(calc(193.781px - 55px) + 64px));
+
+    .number {
+      img:first-child {
+        transform: translate(-50%, -100%);
+      }
+    }
+
+    &-title {
+      margin: rem(36px 0 38px);
+      font-size: rem(20px);
+    }
+
+    &-description {
+      padding: rem(0 25px);
+
+      @include media-breakpoint-up(sm) {
+        padding: rem(0 35px);
+      }
+    }
+  }
+
+}
+
+/* End The Services Section */
+/* Start The  Portfolio Section */
+.portfolio {
+  padding-top: rem(58px);
+  padding-bottom: rem(60px);
+
+  .list-choices {
+    margin: rem(61px 0 59px);
+
+    .link-item {
+      padding: rem(10px);
+
+      @include media-breakpoint-up(sm) {
+        padding: rem(10px 21.5px);
+      }
+
+      &:hover {
+        @extend .btn-red-pink;
+        color: $supernova !important;
+      }
+    }
+  }
+
+  .card {
+    &-body {
+      background-color: rgba($dark-turquoise, 0.9);
+      left: -100%;
+      @include x-transition(all 0.5s ease);
+
+      .card-title {
+        font-size: rem(20px);
+      }
+    }
+
+    &:hover {
+      .card-body {
+        left: 0;
+        visibility: visible !important;
+      }
+    }
+  }
+
+  .btn {
+    width: rem(208px);
+    height: rem(45px);
+    line-height: rem(45px);
+    margin-top: rem(58px);
+  }
+}
+
+/* End The  Portfolio Section */

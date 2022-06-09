@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* Mixin For the centered element By Flexbox */
+/* Transition for mixin */
+/* I can write code here to override the value of any bootstrap (variables, maps,....) */
+/* Import Bootstrap */
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -880,6 +884,16 @@ progress {
   --bs-gutter-y: 3rem;
 }
 
+.g-6,
+.gx-6 {
+  --bs-gutter-x: 1.875rem;
+}
+
+.g-6,
+.gy-6 {
+  --bs-gutter-y: 1.875rem;
+}
+
 @media (min-width: 576px) {
   .col-sm {
     flex: 1 0 0%;
@@ -1091,6 +1105,16 @@ progress {
   .g-sm-5,
 .gy-sm-5 {
     --bs-gutter-y: 3rem;
+  }
+
+  .g-sm-6,
+.gx-sm-6 {
+    --bs-gutter-x: 1.875rem;
+  }
+
+  .g-sm-6,
+.gy-sm-6 {
+    --bs-gutter-y: 1.875rem;
   }
 }
 @media (min-width: 768px) {
@@ -1305,6 +1329,16 @@ progress {
 .gy-md-5 {
     --bs-gutter-y: 3rem;
   }
+
+  .g-md-6,
+.gx-md-6 {
+    --bs-gutter-x: 1.875rem;
+  }
+
+  .g-md-6,
+.gy-md-6 {
+    --bs-gutter-y: 1.875rem;
+  }
 }
 @media (min-width: 992px) {
   .col-lg {
@@ -1517,6 +1551,16 @@ progress {
   .g-lg-5,
 .gy-lg-5 {
     --bs-gutter-y: 3rem;
+  }
+
+  .g-lg-6,
+.gx-lg-6 {
+    --bs-gutter-x: 1.875rem;
+  }
+
+  .g-lg-6,
+.gy-lg-6 {
+    --bs-gutter-y: 1.875rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1731,6 +1775,16 @@ progress {
 .gy-xl-5 {
     --bs-gutter-y: 3rem;
   }
+
+  .g-xl-6,
+.gx-xl-6 {
+    --bs-gutter-x: 1.875rem;
+  }
+
+  .g-xl-6,
+.gy-xl-6 {
+    --bs-gutter-y: 1.875rem;
+  }
 }
 @media (min-width: 1400px) {
   .col-xxl {
@@ -1943,6 +1997,16 @@ progress {
   .g-xxl-5,
 .gy-xxl-5 {
     --bs-gutter-y: 3rem;
+  }
+
+  .g-xxl-6,
+.gx-xxl-6 {
+    --bs-gutter-x: 1.875rem;
+  }
+
+  .g-xxl-6,
+.gy-xxl-6 {
+    --bs-gutter-y: 1.875rem;
   }
 }
 .table {
@@ -11118,7 +11182,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* Import Bootstrap */
 /*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -21258,6 +21321,269 @@ readers do not read off random characters that represent icons */
 }
 
 /* Import Font Awesome */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-cadet-blue {
+  background-color: #a8b9c0;
+}
+
+.text-cadet-blue {
+  color: #a8b9c0;
+}
+
+.bg-ebony-clay {
+  background-color: #19283f;
+}
+
+.text-ebony-clay {
+  color: #19283f;
+}
+
+.bg-dark-turquoise {
+  background-color: #00c6bf;
+}
+
+.text-dark-turquoise {
+  color: #00c6bf;
+}
+
+.bg-red-pink {
+  background-color: #ff3150;
+}
+
+.text-red-pink {
+  color: #ff3150;
+}
+
+.bg-supernova {
+  background-color: #ffc501;
+}
+
+.text-supernova {
+  color: #ffc501;
+}
+
+.bg-blue-zodiac {
+  background-color: #1a2940;
+}
+
+.text-blue-zodiac {
+  color: #1a2940;
+}
+
+.bg-white-lilac {
+  background-color: #f0f8fb;
+}
+
+.text-white-lilac {
+  color: #f0f8fb;
+}
+
+.bg-catskill-white {
+  background-color: #eff7fa;
+}
+
+.text-catskill-white {
+  color: #eff7fa;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fw-md {
+  font-weight: 500 !important;
+}
+
+.fs-sm {
+  font-size: 0.9375rem !important;
+}
+
+.header {
+  height: 31.25rem;
+}
+.header .navbar {
+  padding: 1.125rem 0 0;
+}
+.header .navbar-toggler i {
+  font-size: 1.5625rem;
+}
+.header .navbar button[aria-expanded=true] {
+  border: 0.0625rem solid #00c6bf !important;
+}
+.header .navbar-collapse .nav-link.active {
+  color: #00c6bf !important;
+}
+.header .navbar-collapse .nav-link:hover {
+  color: #00c6bf;
+}
+@media (min-width: 992px) {
+  .header .navbar-collapse .nav-link {
+    padding: 0 1.3125rem !important;
+  }
+}
+.header .navbar-collapse .form span {
+  padding: 0 1.375rem;
+}
+.header .navbar-collapse .form span::before {
+  content: "";
+  position: absolute;
+  background-color: #00c6bf;
+  width: 0.0625rem;
+  height: 1.5625rem;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.header .navbar-collapse .form button {
+  width: 6.875rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.btn-red-pink, .portfolio .list-choices .link-item:hover {
+  color: #000;
+  background-color: #ff3150;
+  border-color: #ff3150;
+  color: #ffc501;
+}
+.btn-red-pink:hover, .portfolio .list-choices .link-item:hover {
+  color: #000;
+  background-color: #ff506a;
+  border-color: #ff4662;
+}
+.btn-check:focus + .btn-red-pink, .portfolio .list-choices .btn-check:focus + .link-item:hover, .btn-red-pink:focus, .portfolio .list-choices .link-item:focus:hover {
+  color: #000;
+  background-color: #ff506a;
+  border-color: #ff4662;
+  box-shadow: 0 0 0 0.25rem rgba(217, 42, 68, 0.5);
+}
+.btn-check:checked + .btn-red-pink, .portfolio .list-choices .btn-check:checked + .link-item:hover, .btn-check:active + .btn-red-pink, .portfolio .list-choices .btn-check:active + .link-item:hover, .btn-red-pink:active, .portfolio .list-choices .link-item:active:hover, .btn-red-pink.active, .portfolio .list-choices .active.link-item:hover, .show > .btn-red-pink.dropdown-toggle, .portfolio .list-choices .show > .dropdown-toggle.link-item:hover {
+  color: #000;
+  background-color: #ff5a73;
+  border-color: #ff4662;
+}
+.btn-check:checked + .btn-red-pink:focus, .portfolio .list-choices .btn-check:checked + .link-item:focus:hover, .btn-check:active + .btn-red-pink:focus, .portfolio .list-choices .btn-check:active + .link-item:focus:hover, .btn-red-pink:active:focus, .portfolio .list-choices .link-item:active:focus:hover, .btn-red-pink.active:focus, .portfolio .list-choices .active.link-item:focus:hover, .show > .btn-red-pink.dropdown-toggle:focus, .portfolio .list-choices .show > .dropdown-toggle.link-item:focus:hover {
+  box-shadow: 0 0 0 0.25rem rgba(217, 42, 68, 0.5);
+}
+.btn-red-pink:disabled, .portfolio .list-choices .link-item:disabled:hover, .btn-red-pink.disabled, .portfolio .list-choices .disabled.link-item:hover {
+  color: #000;
+  background-color: #ff3150;
+  border-color: #ff3150;
+}
+
+.header-section-title {
+  margin: 3.0625rem 0 1.3125rem;
+}
+@media (min-width: 576px) {
+  .header-section-title {
+    font-size: 2.1875rem;
+  }
+}
+.header-section-description {
+  padding-bottom: 1.1875rem;
+}
+.header-section-description::before {
+  content: "";
+  position: absolute;
+  background-color: #00c6bf;
+  width: 9.375rem;
+  height: 0.125rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Start The Intro Section */
+.intro {
+  height: 31.25rem;
+}
+.intro-title {
+  padding-top: 12.9375rem;
+}
+@media (min-width: 576px) {
+  .intro-title {
+    font-size: 3.1975rem;
+  }
+}
+.intro p {
+  margin-bottom: 2.125rem;
+}
+.intro button {
+  width: 11.875rem;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+}
+
+/* End The Intro Section */
+/* Start The Services Section */
+.services {
+  padding-top: 3.625rem;
+  padding-bottom: 3.9375rem;
+}
+.services-item {
+  margin-top: 12.6738125rem;
+}
+.services-item .number img:first-child {
+  transform: translate(-50%, -100%);
+}
+.services-item-title {
+  margin: 2.25rem 0 2.375rem;
+  font-size: 1.25rem;
+}
+.services-item-description {
+  padding: 0 1.5625rem;
+}
+@media (min-width: 576px) {
+  .services-item-description {
+    padding: 0 2.1875rem;
+  }
+}
+
+/* End The Services Section */
+/* Start The  Portfolio Section */
+.portfolio {
+  padding-top: 3.625rem;
+  padding-bottom: 3.75rem;
+}
+.portfolio .list-choices {
+  margin: 3.8125rem 0 3.6875rem;
+}
+.portfolio .list-choices .link-item {
+  padding: 0.625rem;
+}
+@media (min-width: 576px) {
+  .portfolio .list-choices .link-item {
+    padding: 0.625rem 1.34375rem;
+  }
+}
+.portfolio .list-choices .link-item:hover {
+  color: #ffc501 !important;
+}
+.portfolio .card-body {
+  background-color: rgba(0, 198, 191, 0.9);
+  left: -100%;
+  transition: all 0.5s ease;
+}
+.portfolio .card-body .card-title {
+  font-size: 1.25rem;
+}
+.portfolio .card:hover .card-body {
+  left: 0;
+  visibility: visible !important;
+}
+.portfolio .btn {
+  width: 13rem;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  margin-top: 3.625rem;
+}
+
+/* End The  Portfolio Section */
 /* Import Configuration and helpers */
 /* Import Vendors */
 /* Import Base stuff */

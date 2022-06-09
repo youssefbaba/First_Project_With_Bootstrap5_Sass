@@ -25,14 +25,13 @@
 
 /* Import Components */
 @use 'components/button';
+@use 'components/section-title';
 @use 'components/carousel';
 @use 'components/alert';
 
 
 /* Import Page-specific styles*/
 @use 'pages/home';
-@use 'pages/about';
-@use 'pages/contact';
 
 
 /* Import Themes */

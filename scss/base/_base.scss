@@ -1,0 +1,29 @@
+@use "../abstracts/mixins"as *;
+@use "../abstracts/variables"as *;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@each $name,
+$color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+
+  .text-#{$name} {
+    color: $color
+  }
+}
+
+.center-flex {
+  @include centerer;
+}
+
+.fw-md {
+  font-weight: $font-weight-medium !important;
+}
+
+.fs-sm {
+  font-size: $fon-size-small !important;
+}

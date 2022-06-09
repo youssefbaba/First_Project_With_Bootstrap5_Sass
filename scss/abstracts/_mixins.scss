@@ -1,0 +1,13 @@
+@use "../abstracts/variables"as *;
+
+/* Mixin For the centered element By Flexbox */
+@mixin centerer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Transition for mixin */
+@mixin x-transition ($values...) {
+  transition: $values;
+}
