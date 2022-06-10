@@ -1,5 +1,6 @@
 @use "../../node_modules/sass-rem/rem"as *;
 
+/* Colors */
 $base-size: 16px;
 $cadet-blue : #a8b9c0;
 $ebony-clay:#19283f;
@@ -9,8 +10,18 @@ $supernova : #ffc501;
 $blue-zodiac :#1a2940;
 $white-lilac : #f0f8fb;
 $catskill-white : #eff7fa;
+
+
+/* Font Size */
+$fon-size-extra-small: rem(13px);
 $fon-size-small: rem(15px);
+$fon-size-medium: rem(20px);
+$fon-size-large: rem(35px);
+
+
+/* Font Weight */
 $font-weight-medium: 500;
+
 
 $colors : ("cadet-blue": #a8b9c0,
   "ebony-clay":#19283f,
@@ -19,4 +30,12 @@ $colors : ("cadet-blue": #a8b9c0,
   "supernova" : #ffc501,
   "blue-zodiac" :#1a2940,
   "white-lilac" : #f0f8fb,
-  "catskill-white" : #eff7fa)
+  "catskill-white" : #eff7fa);
+
+
+
+$color-media :("facebook": #1877f2,
+  "twitter": #1da1f2,
+  "google": #dd4b39,
+  "dribble": #ea4c89,
+)

@@ -4,20 +4,31 @@
 
 .header-section {
   &-title {
-    margin: rem(49px 0 21px);
+    margin: 0 {
+      top: rem(49px);
+      bottom: rem(21px);
+    }
 
     @include media-breakpoint-up(sm) {
-      font-size: rem(35px);
+      font: {
+        size: $fon-size-large;
+      }
     }
   }
 
   &-description {
-    padding-bottom: rem(19px);
+    padding: {
+      bottom: rem(19px);
+    }
 
     &::before {
       content: "";
       position: absolute;
-      background-color: $dark-turquoise;
+
+      background: {
+        color: $dark-turquoise;
+      }
+
       width: rem(150px);
       height: rem(2px);
       bottom: 0;

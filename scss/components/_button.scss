@@ -1,7 +1,17 @@
 @use "../abstracts/variables"as *;
 @use "../vendors/bootstrap"as *;
+@use "../../node_modules/sass-rem/rem"as *;
 
-.btn-red-pink {
-  @include button-variant($red-pink, $red-pink);
-  color: $supernova;
+.btn {
+  padding: rem(10px) rem(30px) !important;
+
+  &-red-pink {
+    @include button-variant($red-pink, $red-pink);
+    color: $supernova;
+  }
+
+  &-ebony-clay {
+    @include button-variant($ebony-clay, $ebony-clay);
+    color: $supernova;
+  }
 }

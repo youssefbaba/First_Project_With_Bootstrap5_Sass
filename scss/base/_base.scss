@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: $fon-size-small;
 }
 
 @each $name,
@@ -22,8 +23,4 @@ $color in $colors {
 
 .fw-md {
   font-weight: $font-weight-medium !important;
-}
-
-.fs-sm {
-  font-size: $fon-size-small !important;
 }

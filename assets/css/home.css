@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* Colors */
+/* Font Size */
+/* Font Weight */
 /* Mixin For the centered element By Flexbox */
 /* Transition for mixin */
 /* I can write code here to override the value of any bootstrap (variables, maps,....) */
@@ -21323,6 +21326,7 @@ readers do not read off random characters that represent icons */
 /* Import Font Awesome */
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
 }
 
 .bg-cadet-blue {
@@ -21399,15 +21403,13 @@ body {
   font-weight: 500 !important;
 }
 
-.fs-sm {
-  font-size: 0.9375rem !important;
-}
-
 .header {
   height: 31.25rem;
 }
 .header .navbar {
-  padding: 1.125rem 0 0;
+  padding: 0;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
 }
 .header .navbar-toggler i {
   font-size: 1.5625rem;
@@ -21427,7 +21429,9 @@ body {
   }
 }
 .header .navbar-collapse .form span {
-  padding: 0 1.375rem;
+  padding: 0;
+  padding-left: 1.375rem;
+  padding-right: 1.375rem;
 }
 .header .navbar-collapse .form span::before {
   content: "";
@@ -21439,12 +21443,10 @@ body {
   left: 0;
   transform: translateY(-50%);
 }
-.header .navbar-collapse .form button {
-  width: 6.875rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
-}
 
+.btn {
+  padding: 0.625rem 1.875rem !important;
+}
 .btn-red-pink, .portfolio .list-choices .link-item:hover {
   color: #000;
   background-color: #ff3150;
@@ -21475,9 +21477,41 @@ body {
   background-color: #ff3150;
   border-color: #ff3150;
 }
+.btn-ebony-clay {
+  color: #fff;
+  background-color: #19283f;
+  border-color: #19283f;
+  color: #ffc501;
+}
+.btn-ebony-clay:hover {
+  color: #fff;
+  background-color: #152236;
+  border-color: #142032;
+}
+.btn-check:focus + .btn-ebony-clay, .btn-ebony-clay:focus {
+  color: #fff;
+  background-color: #152236;
+  border-color: #142032;
+  box-shadow: 0 0 0 0.25rem rgba(60, 72, 92, 0.5);
+}
+.btn-check:checked + .btn-ebony-clay, .btn-check:active + .btn-ebony-clay, .btn-ebony-clay:active, .btn-ebony-clay.active, .show > .btn-ebony-clay.dropdown-toggle {
+  color: #fff;
+  background-color: #142032;
+  border-color: #131e2f;
+}
+.btn-check:checked + .btn-ebony-clay:focus, .btn-check:active + .btn-ebony-clay:focus, .btn-ebony-clay:active:focus, .btn-ebony-clay.active:focus, .show > .btn-ebony-clay.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(60, 72, 92, 0.5);
+}
+.btn-ebony-clay:disabled, .btn-ebony-clay.disabled {
+  color: #fff;
+  background-color: #19283f;
+  border-color: #19283f;
+}
 
 .header-section-title {
-  margin: 3.0625rem 0 1.3125rem;
+  margin: 0;
+  margin-top: 3.0625rem;
+  margin-bottom: 1.3125rem;
 }
 @media (min-width: 576px) {
   .header-section-title {
@@ -21513,11 +21547,6 @@ body {
 .intro p {
   margin-bottom: 2.125rem;
 }
-.intro button {
-  width: 11.875rem;
-  height: 2.8125rem;
-  line-height: 2.8125rem;
-}
 
 /* End The Intro Section */
 /* Start The Services Section */
@@ -21532,15 +21561,21 @@ body {
   transform: translate(-50%, -100%);
 }
 .services-item-title {
-  margin: 2.25rem 0 2.375rem;
+  margin: 0;
+  margin-top: 2.25rem;
+  margin-bottom: 2.375rem;
   font-size: 1.25rem;
 }
 .services-item-description {
-  padding: 0 1.5625rem;
+  padding: 0;
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
 }
 @media (min-width: 576px) {
   .services-item-description {
-    padding: 0 2.1875rem;
+    padding: 0;
+    padding-left: 2.1875rem;
+    padding-right: 2.1875rem;
   }
 }
 
@@ -21551,7 +21586,9 @@ body {
   padding-bottom: 3.75rem;
 }
 .portfolio .list-choices {
-  margin: 3.8125rem 0 3.6875rem;
+  margin: 0;
+  margin-top: 3.8125rem;
+  margin-bottom: 3.6875rem;
 }
 .portfolio .list-choices .link-item {
   padding: 0.625rem;
@@ -21566,6 +21603,8 @@ body {
 }
 .portfolio .card-body {
   background-color: rgba(0, 198, 191, 0.9);
+  height: calc(100% - 1rem);
+  width: calc(100% - 1rem);
   left: -100%;
   transition: all 0.5s ease;
 }
@@ -21573,17 +21612,193 @@ body {
   font-size: 1.25rem;
 }
 .portfolio .card:hover .card-body {
-  left: 0;
+  left: 0.5rem;
   visibility: visible !important;
 }
 .portfolio .btn {
-  width: 13rem;
-  height: 2.8125rem;
-  line-height: 2.8125rem;
   margin-top: 3.625rem;
 }
 
 /* End The  Portfolio Section */
+/* Start The About Us Section */
+.about-us {
+  padding-top: 3.75rem;
+}
+.about-us .intro-section {
+  margin-top: 1.6875rem;
+  margin-bottom: 2.75rem;
+  max-width: 35.75rem;
+}
+.about-us .info-title {
+  font-size: 2.1875rem;
+  margin-bottom: 1.4375rem;
+}
+
+/* End The About Us Section */
+/* Start The Team Section */
+.team {
+  padding-top: 7.125rem;
+  padding-bottom: 3.75rem;
+}
+@media (min-width: 576px) {
+  .team-header-title {
+    font-size: 2.1875rem;
+  }
+}
+.team-header-description {
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 3.3125rem;
+}
+.team .card-title {
+  font-size: 1.25rem;
+  padding-top: 0.875rem;
+  padding-bottom: 1.0625rem;
+}
+.team .card-text {
+  padding: 2.125rem 1.875rem;
+}
+
+/* End The Team Section */
+/* Start The Clients Section */
+.clients {
+  padding-top: 3.125rem;
+  padding-bottom: 3.75rem;
+}
+
+/* End The Clients Section */
+/* Start The Section advertise */
+.advertise {
+  padding: 0;
+  padding-top: 7.125rem;
+  padding-bottom: 7.125rem;
+}
+@media (min-width: 576px) {
+  .advertise-title {
+    font-size: 2.1875rem;
+  }
+}
+.advertise-description {
+  margin-top: 1.0625rem;
+  margin-bottom: 3.1875rem;
+}
+
+/* End The Section advertise */
+/* Start The Blog Section */
+.blog {
+  padding-top: 3.625rem;
+  padding-bottom: 3.5625rem;
+}
+.blog .header-section {
+  margin-bottom: 3.6875rem;
+}
+.blog .card-body {
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+}
+.blog .card-text {
+  font-size: 0.8125rem;
+  margin-bottom: 0.875rem !important;
+}
+.blog .card-title {
+  font-size: 1.25rem;
+}
+.blog .btn {
+  margin-top: 3rem;
+}
+
+/* End The Blog Section */
+/* Start The Contact section */
+.contact {
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
+}
+.contact-title {
+  font-size: 1.25rem;
+}
+.contact input[type=email] {
+  caret-color: #fff;
+}
+.contact input[type=email]::placeholder {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  .contact .second-col {
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contact .second-col {
+    margin-left: 0;
+  }
+}
+
+/* End The Contact section */
+/* Start The Footer Section */
+.footer {
+  padding-top: 3.625rem;
+  padding-bottom: 3.3125rem;
+}
+.footer .first-column .decription {
+  margin-top: 1.9375rem;
+  margin-bottom: 2.8125rem;
+}
+.footer .first-column .creator {
+  margin-bottom: 0.8125rem;
+}
+.footer .second-column .title,
+.footer .second-column ul > li:not(:last-child),
+.footer .third-column .title,
+.footer .third-column ul > li:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.footer .fourth-column .description {
+  margin-top: 1.625rem;
+  margin-bottom: 2.5625rem;
+}
+.footer .fourth-column .btn {
+  margin-bottom: 2.4375rem;
+}
+.footer .fourth-column .btn:hover {
+  color: #19283f !important;
+}
+.footer a,
+.footer p,
+.footer .btn {
+  font-size: 0.8125rem;
+}
+.footer a:hover {
+  color: #f0f8fb !important;
+}
+.footer .list-media .facebook {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #1877f2;
+  margin-right: 0.75rem;
+}
+.footer .list-media .twitter {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #1da1f2;
+  margin-right: 0.75rem;
+}
+.footer .list-media .google {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dd4b39;
+  margin-right: 0.75rem;
+}
+.footer .list-media .dribble {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #ea4c89;
+  margin-right: 0.75rem;
+}
+
+/* End The Footer Section */
 /* Import Configuration and helpers */
 /* Import Vendors */
 /* Import Base stuff */

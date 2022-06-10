@@ -11,32 +11,37 @@
   height: rem(500px);
 
   &-title {
-    padding-top: rem(207px);
+    padding: {
+      top: rem(207px);
+    }
 
     @include media-breakpoint-up(sm) {
-      font-size: rem(51.16px);
+      font: {
+        size: rem(51.16px);
+      }
     }
   }
 
   p {
-    margin-bottom: rem(34px);
+    margin: {
+      bottom: rem(34px);
+    }
   }
 
-  button {
-    width: rem(190px);
-    height: rem(45px);
-    line-height: rem(45px);
-  }
 }
 
 /* End The Intro Section */
 /* Start The Services Section */
 .services {
-  padding-top: rem(58px);
-  padding-bottom: rem(63px);
+  padding: {
+    top: rem(58px);
+    bottom: rem(63px);
+  }
 
   &-item {
-    margin-top: rem(calc(calc(193.781px - 55px) + 64px));
+    margin: {
+      top: rem(calc(calc(193.781px - 55px) + 64px));
+    }
 
     .number {
       img:first-child {
@@ -45,15 +50,31 @@
     }
 
     &-title {
-      margin: rem(36px 0 38px);
-      font-size: rem(20px);
+      margin:0 {
+        top: rem(36px);
+        bottom: rem(38px);
+      }
+
+      font: {
+        size: $fon-size-medium;
+      }
     }
 
     &-description {
-      padding: rem(0 25px);
+
+      // padding:rem(0 25px);
+      padding:0 {
+        left: rem(25px);
+        right: rem(25px);
+      }
 
       @include media-breakpoint-up(sm) {
-        padding: rem(0 35px);
+
+        // padding:rem(0 35px);
+        padding: 0 {
+          left: rem(35px);
+          right: rem(35px);
+        }
       }
     }
   }
@@ -63,11 +84,16 @@
 /* End The Services Section */
 /* Start The  Portfolio Section */
 .portfolio {
-  padding-top: rem(58px);
-  padding-bottom: rem(60px);
+  padding: {
+    top: rem(58px);
+    bottom: rem(60px);
+  }
 
   .list-choices {
-    margin: rem(61px 0 59px);
+    margin: 0 {
+      top: rem(61px);
+      bottom: rem(59px);
+    }
 
     .link-item {
       padding: rem(10px);
@@ -84,8 +110,11 @@
   }
 
   .card {
+
     &-body {
       background-color: rgba($dark-turquoise, 0.9);
+      height: calc(100% - 1rem);
+      width: calc(100% - 1rem);
       left: -100%;
       @include x-transition(all 0.5s ease);
 
@@ -96,18 +125,309 @@
 
     &:hover {
       .card-body {
-        left: 0;
+        left: 0.5rem;
         visibility: visible !important;
       }
     }
   }
 
   .btn {
-    width: rem(208px);
-    height: rem(45px);
-    line-height: rem(45px);
-    margin-top: rem(58px);
+    margin: {
+      top: rem(58px);
+    }
   }
 }
 
 /* End The  Portfolio Section */
+/* Start The About Us Section */
+.about-us {
+  padding: {
+    top: rem(60px);
+  }
+
+  // padding-bottom: rem(60px);
+  .intro-section {
+    margin: {
+      top: rem(27px);
+      bottom: rem(44px);
+    }
+
+    max-width: rem(572px);
+  }
+
+  .info {
+    &-title {
+      font: {
+        size: $fon-size-large;
+      }
+
+      margin: {
+        bottom: rem(23px);
+      }
+    }
+  }
+
+  // .btn {
+  //   width: rem(209px);
+  //   height: rem(45px);
+
+  //   line: {
+  //     height: rem(45px);
+  //   }
+  // }
+}
+
+/* End The About Us Section */
+/* Start The Team Section */
+.team {
+  padding: {
+    top: rem(114px);
+    bottom: rem(60px);
+  }
+
+  &-header {
+    &-title {
+      @include media-breakpoint-up(sm) {
+        font: {
+          size: $fon-size-large;
+        }
+      }
+    }
+
+    &-description {
+      margin: 0 {
+        top: rem(32px);
+        bottom: rem(53px);
+      }
+    }
+  }
+
+  .card {
+    &-title {
+      font: {
+        size: $fon-size-medium;
+      }
+
+      padding: {
+        top: rem(14px);
+        bottom: rem(17px);
+      }
+    }
+
+    &-text {
+      padding: rem(34px 30px);
+    }
+  }
+}
+
+/* End The Team Section */
+/* Start The Clients Section */
+.clients {
+  padding: {
+    top: rem(50px);
+    bottom: rem(60px);
+  }
+}
+
+/* End The Clients Section */
+/* Start The Section advertise */
+.advertise {
+  padding: 0 {
+    top: rem(114px);
+    bottom: rem(114px);
+  }
+
+  &-title {
+    @include media-breakpoint-up(sm) {
+      font: {
+        size: $fon-size-large;
+      }
+    }
+  }
+
+  &-description {
+    margin: {
+      top: rem(17px);
+      bottom: rem(51px);
+    }
+  }
+}
+
+/* End The Section advertise */
+/* Start The Blog Section */
+.blog {
+  padding: {
+    top: rem(58px);
+    bottom: rem(57px);
+  }
+
+  .header-section {
+    margin: {
+      bottom: rem(59px);
+    }
+  }
+
+  .card {
+    &-body {
+      padding: {
+        top: rem(18px);
+        bottom: rem(18px);
+      }
+    }
+
+    &-text {
+      font: {
+        size: $fon-size-extra-small;
+      }
+
+      margin: {
+        bottom: rem(14px) !important;
+      }
+    }
+
+    &-title {
+      font: {
+        size: $fon-size-medium;
+      }
+    }
+  }
+
+  .btn {
+    margin: {
+      top: rem(48px);
+    }
+  }
+
+}
+
+/* End The Blog Section */
+/* Start The Contact section */
+.contact {
+  padding: {
+    top: rem(22px);
+    bottom: rem(22px)
+  }
+
+  &-title {
+    font: {
+      size: $fon-size-medium;
+    }
+  }
+
+  input[type="email"] {
+    caret: {
+      color: $white;
+    }
+
+    &::placeholder {
+      color: $white;
+
+      font: {
+        size: $base-size;
+        weight: 400;
+      }
+    }
+
+  }
+
+  .second-col {
+    @include media-breakpoint-up(lg) {
+      margin : {
+        left: rem(30px);
+        right: rem(30px)
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin : {
+        left: 0;
+      }
+    }
+  }
+}
+
+/* End The Contact section */
+/* Start The Footer Section */
+.footer {
+  padding: {
+    top: rem(58px);
+    bottom: rem(53px)
+  }
+
+  .first-column {
+    .decription {
+      margin: {
+        top: rem(31px);
+        bottom: rem(45px);
+      }
+    }
+
+    .creator {
+      margin: {
+        bottom: rem(13px);
+      }
+    }
+  }
+
+  .second-column,
+  .third-column {
+
+    .title,
+    ul>li:not(:last-child) {
+      margin: {
+        bottom: rem(20px);
+      }
+    }
+  }
+
+  .fourth-column {
+    .description {
+      margin: {
+        top: rem(26px);
+        bottom: rem(41px);
+      }
+    }
+
+    .btn {
+      margin: {
+        bottom: rem(39px);
+      }
+
+      &:hover {
+        color: $ebony-clay !important;
+      }
+    }
+  }
+
+  a,
+  p,
+  .btn {
+    font: {
+      size: $fon-size-extra-small;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $white-lilac !important;
+    }
+  }
+
+  .list-media {
+
+    @each $name,
+    $color in $color-media {
+      .#{$name} {
+        width: rem(35px);
+        height: rem(35px);
+        background-color: $color;
+
+        margin: {
+          right: rem(12px);
+        }
+      }
+    }
+  }
+}
+
+/* End The Footer Section */
